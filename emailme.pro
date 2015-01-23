@@ -1,3 +1,14 @@
+;
+;
+; Created in 2012
+; Author: Daisy Leung
+;
+; Based on python email.py
+; Purpose: Email self when IDL crashes, or any errors 
+;
+;
+
+
 pro emailme
 
    catch, error_status
@@ -7,7 +18,7 @@ pro emailme
        print, !error_state.msg    ;tells what issue like socket or function...
        print
        print, "I'll email you now."
-       spawn, 'python email.py'
+       spawn, 'python email.py'     ; execute python email script
        print, "You have mail!"
 ;       catch, /cancel
 
@@ -17,9 +28,9 @@ pro emailme
 
 
    ;observing code goes here
-   print, "Lalala, I'm observing."
+   print, "...I'm observing....."
    wait, 2
-   print, "But then something BAD happens."
+   print, "**** BOOMMMM... something BAD happens."
    wait, 2
 
    dfka ;jibberish to make IDL crash

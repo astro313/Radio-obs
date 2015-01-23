@@ -12,6 +12,8 @@ function cool, input1, input2 , reverse = reverse, radian = radian
 ;
 ;OUTPUT: new coordinates [deg], [rad] if /radian set
 ;
+; Author : Daisy Leung
+;
 ;-
 
 

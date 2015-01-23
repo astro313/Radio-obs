@@ -11,7 +11,7 @@ print "hello world!"
 SENDMAIL = "/usr/sbin/sendmail" # sendmail location
 p = os.popen("%s -t" % SENDMAIL, "w")
 p.write("To: leungtszkuk@gmail.com\n")
-p.write("Subject: Python can do anything\n")
+p.write("Subject: Your IDL code crashed \n")
 p.write("\n") # blank line separating headers from body
 
 message = "Your code has crashed.\n \n This is a new line. \n \n Python is fun. \n"

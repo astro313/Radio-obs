@@ -9,7 +9,10 @@ pro observer, sun = sun, moon = moon, obj = obj
 ;INPUT: keyword of the object to point
 ;
 ;NOTE: startchat1, [/sun], [/moon] is the one that saved volt
-
+;
+; Was targeted for Leuschner observing nights..
+;
+;
 
 home_intt = 0.5   ;half an hour in decimal time
 begint = ilst()   ;1st begin time
